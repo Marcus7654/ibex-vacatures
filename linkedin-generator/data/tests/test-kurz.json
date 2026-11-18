@@ -1,0 +1,12 @@
+{
+  "id": "test-kurz",
+  "titel": "FaGe EFZ",
+  "zeile1": "Spitex | Kanton Zug",
+  "zeile2": "Pensum 100 % · Per sofort",
+  "vorteile": [
+    { "icon": "mond", "titel": "Nachtdienst", "text": "Ruhig und selbstständig arbeiten." },
+    { "icon": "herz", "titel": "Sinnvolle Arbeit", "text": "Du machst den Unterschied." },
+    { "icon": "kalender", "titel": "Per sofort", "text": "Starte, wann du willst." }
+  ],
+  "foto": { "datei": "assets/fotos/platzhalter.jpg", "fokus": "50% 30%" }
+}

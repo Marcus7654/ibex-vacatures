@@ -1,0 +1,12 @@
+{
+  "id": "test-lang",
+  "titel": "Dipl. Pflegefachperson HF/FH mit Fallführung und Tagesverantwortung",
+  "zeile1": "Psychiatrische Langzeitpflege mit Demenzschwerpunkt | Kanton Graubünden",
+  "zeile2": "Pensum 60–100 % · Start ab 1. Februar 2027 · Temporär oder fest",
+  "vorteile": [
+    { "icon": "wechsel", "titel": "Temporär oder Festanstellung nach deiner Wahl", "text": "Du entscheidest selbst, ob du die Stelle temporär oder in einer Festanstellung antreten möchtest." },
+    { "icon": "klemmbrett", "titel": "Verantwortungsvolle Aufgabe", "text": "Als fallführende Pflegefachperson gestaltest du die Pflege deiner Bewohnerinnen und Bewohner aktiv mit." },
+    { "icon": "team", "titel": "Persönliche Betreuung", "text": "Wir begleiten dich während des gesamten Einsatzes und sind jederzeit für dich da." }
+  ],
+  "foto": { "datei": "assets/fotos/platzhalter.jpg", "fokus": "50% 30%" }
+}

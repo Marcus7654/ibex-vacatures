@@ -1,0 +1,27 @@
+{
+  "id": "pflegefachperson-fallfuehrung-spitex",
+  "titel": "Dipl. Pflegefachperson HF mit Fallführung",
+  "zeile1": "Spitex Somatik | Kanton Zürich",
+  "zeile2": "Pensum 80–100 % · Start per sofort",
+  "vorteile": [
+    {
+      "icon": "wechsel",
+      "titel": "Temporär oder fest",
+      "text": "Du entscheidest, wie du die Stelle antreten möchtest."
+    },
+    {
+      "icon": "klemmbrett",
+      "titel": "Verantwortung übernehmen",
+      "text": "Als Fallführung gestaltest du die Pflege aktiv mit."
+    },
+    {
+      "icon": "medaille",
+      "titel": "Faire Entlöhnung",
+      "text": "Abgestimmt auf deine Qualifikation und Erfahrung."
+    }
+  ],
+  "foto": {
+    "datei": "assets/fotos/bibliothek/pflege-stethoskop-herz.jpg",
+    "fokus": "50% 45%"
+  }
+}

@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="de-CH">
+<head>
+<meta charset="utf-8">
+<title>Ibex Medics LinkedIn-Template</title>
+<link rel="stylesheet" href="../node_modules/@fontsource/poppins/400.css">
+<link rel="stylesheet" href="../node_modules/@fontsource/poppins/500.css">
+<link rel="stylesheet" href="../node_modules/@fontsource/poppins/600.css">
+<style>
+  :root {
+    --rot: #d1080a;
+    --rosa: #f6cdce;
+    --schwarz: #0d0d0d;
+    --grau-text: #7d7e7b;
+    --grau-fuss: #545454;
+    --weiss: #ffffff;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: #fff; }
+  body { font-family: "Poppins", sans-serif; color: var(--schwarz); -webkit-font-smoothing: antialiased; }
+
+  #canvas { position: relative; width: 1200px; height: 1500px; overflow: hidden; background: var(--weiss); }
+  #deko { position: absolute; inset: 0; width: 1200px; height: 1500px; }
+
+  /* ---------- Kopfbereich ---------- */
+  #tagline {
+    position: absolute; left: 905px; top: 34px; width: 240px;
+    font-size: 30px; line-height: 1.5; font-weight: 400; margin: 0;
+  }
+  #tagline::after {
+    content: ""; display: block; width: 196px; height: 7px; background: var(--rot); margin-top: 14px;
+  }
+  #kopf { position: absolute; left: 70px; top: 70px; width: 1060px; }
+  /* Platzhalter, um den der Titel herumfliesst (Bereich der Tagline) */
+  #aussparung { float: right; width: 270px; height: 100px; }
+  #kopf.unter-tagline #aussparung { float: none; width: 0; height: 90px; }
+  #titel {
+    margin: 0; font-weight: 600; line-height: 1.08; letter-spacing: -0.01em;
+    text-wrap: pretty; overflow-wrap: normal; hyphens: manual;
+  }
+  #zeile1 { margin: 16px 0 0; font-weight: 400; line-height: 1.3; white-space: nowrap; clear: both; }
+  #zeile2 { margin: 12px 0 0; font-weight: 400; line-height: 1.3; color: var(--grau-text); white-space: nowrap; }
+  #zeile1, #zeile2 { max-width: 960px; }
+  #strich { width: 285px; height: 8px; background: var(--rot); margin-top: 30px; }
+
+  /* ---------- Mittelteil ---------- */
+  #mitte {
+    position: absolute; left: 70px; width: 1060px;
+    display: grid; grid-template-columns: 492px 1fr; column-gap: 50px;
+  }
+  #foto { width: 492px; height: 100%; overflow: hidden; background: #e9e9e9; }
+  #foto img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  #vorteile { display: flex; flex-direction: column; justify-content: space-around; min-width: 0; }
+  .vorteil { display: grid; grid-template-columns: 104px 1fr; column-gap: 46px; align-items: start; }
+  .icon {
+    width: 104px; height: 104px; border-radius: 50%; background: var(--rosa); color: var(--rot);
+    display: grid; place-items: center;
+  }
+  .icon svg { width: 78px; height: 78px; fill: none; stroke: currentColor; stroke-width: 2;
+              stroke-linecap: round; stroke-linejoin: round; }
+  .vorteil-text { min-width: 0; padding-top: 4px; }
+  .vorteil h3 { margin: 0; font-weight: 600; line-height: 1.5; }
+  .vorteil p { margin: 2px 0 0; font-weight: 400; line-height: 1.58; }
+
+  /* ---------- Fussbereich ---------- */
+  #cta { position: absolute; left: 66px; top: 1290px; margin: 0; color: var(--weiss);
+         font-weight: 600; line-height: 1.2; white-space: nowrap; }
+  #cta-sub { position: absolute; left: 66px; top: 1396px; margin: 0; color: var(--weiss);
+             font-weight: 400; line-height: 1.3; white-space: nowrap; }
+  /* Zweizeilig: an der Stelle des Punkts umbrechen */
+  #cta-sub.zweizeilig span { display: block; }
+  #cta-sub.zweizeilig .trenner { display: none; }
+  #logo { position: absolute; left: 963px; top: 1284px; width: 172px; }
+</style>
+</head>
+<body>
+<div id="canvas">
+  <svg id="deko" viewBox="0 0 1200 1500" aria-hidden="true">
+    <!-- Rosa Band oben rechts -->
+    <path id="band" fill="#f6cdce" d="M483,0 L996,0 C1060,42 1130,88 1200,135 L1200,355
+      C1150,265 1110,195 1063,160 C1020,128 950,98 878,80 C760,55 600,28 483,0 Z"/>
+    <!-- Graue Welle unten -->
+    <path id="welle" fill="#545454" d="M0,1283 C30,1262 70,1245 130,1242 C220,1243 300,1258 380,1258
+      C460,1257 540,1246 610,1247 C690,1250 750,1265 800,1285 C860,1318 900,1360 930,1390
+      C960,1430 985,1465 1008,1500 L0,1500 Z"/>
+  </svg>
+
+  <p id="tagline">Zusammen. Für die Pflege.</p>
+
+  <div id="kopf">
+    <div id="aussparung"></div>
+    <h1 id="titel"></h1>
+    <p id="zeile1"></p>
+    <p id="zeile2"></p>
+    <div id="strich"></div>
+  </div>
+
+  <div id="mitte">
+    <div id="foto"><img id="foto-img" alt=""></div>
+    <div id="vorteile"></div>
+  </div>
+
+  <p id="cta">Jetzt bewerben!</p>
+  <p id="cta-sub"><span>Link zum Inserat in den Kommentaren</span><span class="trenner"> · </span><span>Lebenslauf genügt</span></p>
+  <img id="logo" src="../assets/logo.png" alt="Ibex Medics">
+</div>
+<script src="icons.js"></script>
+<script src="fit.js"></script>
+</body>
+</html>

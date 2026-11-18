@@ -1,0 +1,12 @@
+{
+  "id": "test-unmoeglich",
+  "titel": "Dipl. Pflegefachperson HF",
+  "zeile1": "Spitex | Kanton Bern",
+  "zeile2": "Pensum 80–100 %",
+  "vorteile": [
+    { "icon": "uhr", "titel": "Flexibles Pensum", "text": "Dies ist ein absichtlich viel zu langer Text, der so viele Wörter enthält, dass er selbst in der kleinsten zulässigen Schriftgrösse nicht mehr in den verfügbaren Platz passt und deshalb vom Generator abgelehnt werden muss, statt ein unschönes Bild zu erzeugen." },
+    { "icon": "medaille", "titel": "Faire Entlöhnung", "text": "Auch dieser Text ist bewusst sehr ausführlich formuliert, damit die automatische Prüfung zeigt, dass zu lange Inhalte zuverlässig erkannt und gemeldet werden, anstatt dass sich Texte überlappen." },
+    { "icon": "team", "titel": "Persönliche Betreuung", "text": "Und noch ein dritter, ebenfalls viel zu langer Text mit vielen zusätzlichen Wörtern, damit die Summe aller Vorteile garantiert nicht mehr in den Mittelteil des Bildes passt." }
+  ],
+  "foto": { "datei": "assets/fotos/platzhalter.jpg", "fokus": "50% 30%" }
+}

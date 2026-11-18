@@ -1,0 +1,343 @@
+[
+  {
+    "datei": "assets/fotos/bibliothek/pflege-stethoskop-herz.jpg",
+    "inhalt": "Frau in blauer Berufskleidung hält ein pinkes Stethoskop in Herzform, Gesicht nur angeschnitten",
+    "passt_zu": [
+      "Pflege allgemein",
+      "Pflegefachperson HF/FH",
+      "FaGe",
+      "Spitex",
+      "Langzeitpflege",
+      "Akutpflege"
+    ],
+    "passt_nicht_zu": [
+      "Radiologie-spezifisch",
+      "Arzt/Ärztin"
+    ],
+    "fokus": "50% 45%"
+  },
+  {
+    "datei": "assets/fotos/bibliothek/aerztin-stethoskop-zeigt.jpg",
+    "inhalt": "Ärztin im weissen Arztkittel mit Stethoskop, zeigt zur Seite, weisser Hintergrund",
+    "passt_zu": [
+      "Arzt/Ärztin",
+      "Assistenzarzt",
+      "Oberarzt",
+      "allgemein medizinisch"
+    ],
+    "passt_nicht_zu": [
+      "Pflege (Arztkittel)",
+      "Spitex",
+      "Radiologie-spezifisch"
+    ],
+    "fokus": "50% 40%"
+  },
+  {
+    "datei": "assets/fotos/bibliothek/radiologie-team-ct-besprechung.jpg",
+    "inhalt": "Zwei Personen in weissen Kitteln besprechen CT-/Röntgenbilder am Bildschirm",
+    "passt_zu": [
+      "Radiologie",
+      "MTRA / Fachperson medizinisch-technische Radiologie",
+      "Radiologe/Radiologin"
+    ],
+    "passt_nicht_zu": [
+      "Pflege",
+      "FaGe",
+      "Spitex",
+      "alle Nicht-Radiologie-Stellen"
+    ],
+    "fokus": "47% 35%"
+  },
+  {
+    "datei": "assets/fotos/bibliothek/radiologie-team-monitore.jpg",
+    "inhalt": "Zwei Personen in weissen Kitteln vor Monitoren mit Schädel-CT",
+    "passt_zu": [
+      "Radiologie",
+      "MTRA / Fachperson medizinisch-technische Radiologie",
+      "Radiologe/Radiologin"
+    ],
+    "passt_nicht_zu": [
+      "Pflege",
+      "FaGe",
+      "Spitex",
+      "alle Nicht-Radiologie-Stellen"
+    ],
+    "fokus": "62% 40%"
+  },
+  {
+    "datei": "assets/fotos/bibliothek/gespraech-business-fenster.jpg",
+    "inhalt": "Zwei Frauen in Business-Kleidung im Gespräch am Fenster, kein medizinisches Umfeld",
+    "passt_zu": [
+      "Arbeitgeber-/Recruiting-Posts",
+      "Bewerbungsgespräch",
+      "Büro/Administration im Gesundheitswesen"
+    ],
+    "passt_nicht_zu": [
+      "klinische Vakanzen (Pflege, FaGe, Arzt, Radiologie)"
+    ],
+    "fokus": "45% 50%"
+  },
+  {
+    "datei": "assets/fotos/bibliothek/aerztin-kittel-notizbuch.jpg",
+    "inhalt": "Lachende Ärztin im weissen Kittel mit Stethoskop und Notizbuch, weisser Hintergrund (Hochformat)",
+    "passt_zu": [
+      "Arzt/Ärztin",
+      "Assistenzarzt",
+      "Oberarzt",
+      "Hausarztpraxis"
+    ],
+    "passt_nicht_zu": [
+      "Pflege (Arztkittel)",
+      "FaGe",
+      "Spitex",
+      "Radiologie-spezifisch"
+    ],
+    "fokus": "50% 25%"
+  },
+  {
+    "datei": "assets/fotos/bibliothek/pflege-rollstuhl-patientin.jpg",
+    "inhalt": "Pflegende in blauer Berufskleidung schiebt lachende Patientin im Rollstuhl, Klinik/Wartebereich",
+    "passt_zu": [
+      "Pflege allgemein",
+      "Pflegefachperson HF/FH",
+      "FaGe",
+      "Akutpflege",
+      "Rehabilitation",
+      "Klinik"
+    ],
+    "passt_nicht_zu": [
+      "Spitex (Klinikumfeld)",
+      "Arzt/Ärztin",
+      "Radiologie"
+    ],
+    "fokus": "52% 40%"
+  },
+  {
+    "datei": "assets/fotos/bibliothek/physiotherapie-behandlung.jpg",
+    "inhalt": "Physiotherapeut in hellblauer Berufskleidung leitet Patient auf Behandlungsliege zu Beinübung an (Hochformat)",
+    "passt_zu": [
+      "Physiotherapie",
+      "Rehabilitation (Therapie)"
+    ],
+    "passt_nicht_zu": [
+      "Pflege",
+      "FaGe",
+      "Arzt/Ärztin",
+      "Radiologie"
+    ],
+    "fokus": "40% 50%"
+  },
+  {
+    "datei": "assets/fotos/bibliothek/hebamme-neugeborenes.jpg",
+    "inhalt": "Fachperson in Weiss mit Handschuhen hält Neugeborenes im Spitalzimmer, Mutter im Bett",
+    "passt_zu": [
+      "Hebamme",
+      "Geburtshilfe",
+      "Wochenbett",
+      "Pflege Mutter und Kind",
+      "Neonatologie"
+    ],
+    "passt_nicht_zu": [
+      "Langzeitpflege",
+      "Spitex",
+      "Radiologie",
+      "allgemeine Pflege ohne Mutter-Kind-Bezug"
+    ],
+    "fokus": "55% 45%"
+  },
+  {
+    "datei": "assets/fotos/bibliothek/langzeitpflege-bewohnerin-zimmer.jpg",
+    "inhalt": "Pflegende in grünem Shirt betritt Zimmer einer lachenden älteren Bewohnerin im Pflegebett",
+    "passt_zu": [
+      "Langzeitpflege",
+      "Alters- und Pflegeheim",
+      "FaGe",
+      "Pflegefachperson Langzeit",
+      "Pflegeassistenz"
+    ],
+    "passt_nicht_zu": [
+      "Akutpflege/Spital",
+      "Radiologie",
+      "Arzt/Ärztin",
+      "Physiotherapie"
+    ],
+    "fokus": "62% 50%"
+  },
+  {
+    "datei": "assets/fotos/bibliothek/langzeitpflege-bewohnerin-rollator.jpg",
+    "inhalt": "Pflegende in grünem Shirt im Gespräch mit älterer Bewohnerin am Rollator, Korridor eines Pflegeheims (Hochformat)",
+    "passt_zu": [
+      "Langzeitpflege",
+      "Alters- und Pflegeheim",
+      "FaGe",
+      "Pflegefachperson Langzeit",
+      "Aktivierung",
+      "Pflegeassistenz"
+    ],
+    "passt_nicht_zu": [
+      "Akutpflege/Spital",
+      "Spitex",
+      "Radiologie",
+      "Arzt/Ärztin"
+    ],
+    "fokus": "60% 55%"
+  },
+  {
+    "datei": "assets/fotos/bibliothek/pflege-kasack-stethoskop-herz.jpg",
+    "inhalt": "Oberkörper in mintgrünem Kasack mit pinkem Stethoskop, rotes Papierherz in der Brusttasche, kein Gesicht",
+    "passt_zu": [
+      "Pflege allgemein",
+      "Pflegefachperson HF/FH",
+      "FaGe",
+      "Akutpflege",
+      "Spitex",
+      "Langzeitpflege"
+    ],
+    "passt_nicht_zu": [
+      "Radiologie-spezifisch",
+      "Rettungsdienst",
+      "Physiotherapie"
+    ],
+    "fokus": "62% 50%"
+  },
+  {
+    "datei": "assets/fotos/bibliothek/ultraschall-schwangerschaft-nah.jpg",
+    "inhalt": "Nahaufnahme Ultraschall am Babybauch, Hand mit Schallkopf",
+    "passt_zu": [
+      "Hebamme",
+      "Gynäkologie und Geburtshilfe",
+      "Arzt/Ärztin Gynäkologie",
+      "MPA Gynäkologie"
+    ],
+    "passt_nicht_zu": [
+      "Pflege allgemein",
+      "Langzeitpflege",
+      "Spitex",
+      "Rettungsdienst"
+    ],
+    "fokus": "50% 50%"
+  },
+  {
+    "datei": "assets/fotos/bibliothek/rettungsdienst-nacht.jpg",
+    "inhalt": "Zwei Rettungssanitäter in Warnwesten mit Patient auf Trage vor offenem Rettungswagen, nachts",
+    "passt_zu": [
+      "Rettungsdienst",
+      "Rettungssanitäter/in HF",
+      "Transportsanitäter/in"
+    ],
+    "passt_nicht_zu": [
+      "Pflege auf Station",
+      "Langzeitpflege",
+      "Spitex",
+      "Radiologie",
+      "Notfallstation im Spital (nur bedingt)"
+    ],
+    "fokus": "50% 55%"
+  },
+  {
+    "datei": "assets/fotos/bibliothek/ultraschall-schwangerschaft-raum.jpg",
+    "inhalt": "Fachperson in Weiss macht Schwangerschafts-Ultraschall, zeigt auf Monitor, Patientin auf Liege",
+    "passt_zu": [
+      "Gynäkologie und Geburtshilfe",
+      "Arzt/Ärztin Gynäkologie",
+      "Hebamme",
+      "Ultraschall/Sonografie"
+    ],
+    "passt_nicht_zu": [
+      "Pflege allgemein",
+      "Langzeitpflege",
+      "Spitex",
+      "Rettungsdienst"
+    ],
+    "fokus": "35% 40%"
+  },
+  {
+    "datei": "assets/fotos/bibliothek/akutpflege-auskultation-patientin.jpg",
+    "inhalt": "Pflegende in blauem Kasack mit Maske hört Patientin im Spitalbett mit Stethoskop ab, Infusionspumpe und Monitor (Hochformat)",
+    "passt_zu": [
+      "Akutpflege",
+      "Spital",
+      "Pflegefachperson HF/FH",
+      "IMC/Intensivpflege",
+      "Notfallpflege",
+      "Kardiologie"
+    ],
+    "passt_nicht_zu": [
+      "Langzeitpflege",
+      "Spitex",
+      "Physiotherapie",
+      "Arzt/Ärztin"
+    ],
+    "fokus": "45% 35%"
+  },
+  {
+    "datei": "assets/fotos/bibliothek/akutpflege-infusion-patientin.jpg",
+    "inhalt": "Pflegende in blauem Kasack kontrolliert Infusion am Bett einer Patientin, Spitalzimmer (Hochformat)",
+    "passt_zu": [
+      "Akutpflege",
+      "Spital",
+      "Pflegefachperson HF/FH",
+      "FaGe Akutpflege",
+      "IMC/Intensivpflege",
+      "Nachtdienst Spital"
+    ],
+    "passt_nicht_zu": [
+      "Langzeitpflege",
+      "Spitex",
+      "Physiotherapie",
+      "Arzt/Ärztin"
+    ],
+    "fokus": "40% 45%"
+  },
+  {
+    "datei": "assets/fotos/bibliothek/kinderbetreuung-spielzimmer.jpg",
+    "inhalt": "Frau im weissen Hemd kniet bei kleinem Kind im Spielzimmer mit Bilderbüchern, kein klinisches Umfeld (Hochformat)",
+    "passt_zu": [
+      "Kinderbetreuung/Kita",
+      "Sozialpädagogik",
+      "Kinder- und Jugendbereich",
+      "Ergotherapie Pädiatrie (bedingt)"
+    ],
+    "passt_nicht_zu": [
+      "Pflege",
+      "Spital",
+      "Arzt/Ärztin",
+      "Langzeitpflege"
+    ],
+    "fokus": "50% 45%"
+  },
+  {
+    "datei": "assets/fotos/bibliothek/aerztin-ophthalmologie.jpg",
+    "inhalt": "Ärztin im weissen Kittel mit Stethoskop, im Hintergrund ophthalmologisches Untersuchungsgerät (Spaltlampe) (Hochformat)",
+    "passt_zu": [
+      "Arzt/Ärztin",
+      "Assistenzarzt",
+      "Ophthalmologie/Augenheilkunde",
+      "Hausarztpraxis"
+    ],
+    "passt_nicht_zu": [
+      "Pflege (Arztkittel)",
+      "FaGe",
+      "Spitex",
+      "Radiologie"
+    ],
+    "fokus": "50% 25%"
+  },
+  {
+    "datei": "assets/fotos/bibliothek/zahnarztpraxis-fachperson.jpg",
+    "inhalt": "Lächelnde Fachperson im weissen Kittel in einer Zahnarztpraxis mit Behandlungsstuhl (Hochformat)",
+    "passt_zu": [
+      "Dentalassistenz",
+      "Dentalhygiene",
+      "Zahnarzt/Zahnärztin",
+      "Praxisassistenz Zahnmedizin"
+    ],
+    "passt_nicht_zu": [
+      "Pflege",
+      "Spital",
+      "Spitex",
+      "Arzt/Ärztin Humanmedizin"
+    ],
+    "fokus": "40% 35%"
+  }
+]

@@ -1,0 +1,27 @@
+{
+  "id": "fage-nachtdienst-akutpflege",
+  "titel": "Fachperson Gesundheit EFZ (FaGe)",
+  "zeile1": "Nachtdienst Akutpflege | Kanton Zürich",
+  "zeile2": "Pensum 50–100 % · Start per sofort",
+  "vorteile": [
+    {
+      "icon": "wechsel",
+      "titel": "Temporär oder fest",
+      "text": "Du entscheidest, wie du die Stelle antreten möchtest."
+    },
+    {
+      "icon": "uhr",
+      "titel": "Flexibles Pensum",
+      "text": "Zwischen 50 und 100 %, passend zu deinem Leben."
+    },
+    {
+      "icon": "wachstum",
+      "titel": "Wertvolle Erfahrung",
+      "text": "Arbeite selbstständig und baue deine Fachkompetenz aus."
+    }
+  ],
+  "foto": {
+    "datei": "assets/fotos/bibliothek/pflege-rollstuhl-patientin.jpg",
+    "fokus": "52% 40%"
+  }
+}
