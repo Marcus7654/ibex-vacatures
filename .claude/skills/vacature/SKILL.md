@@ -62,6 +62,14 @@ Volg `templates/linkedin-post-template.md` en `voorbeelden/linkedin-post-*.txt`:
 3. Afbeelding toevoegen: eerst rechtstreeks vanuit `$WERK/<slug>.png` proberen. Kan Chrome daar niet bij → kopieer de PNG tijdelijk naar Marcs gekoppelde map, upload hem en **verwijder het bestand meteen** zodra de afbeelding zichtbaar in de post staat.
 4. **Stop vóór „Posten“** en laat het tabblad open. Marc controleert en klikt zelf op Posten.
 
-## Stap 7. Opruimen en terugmelden (kort)
-- `rm -rf "$WERK"` en controleer dat er niets van deze skill in Marcs gekoppelde map staat.
-- Meld: link naar de vacature op de website; dat de LinkedIn-post klaarstaat in het open tabblad (of wat niet lukte); de reactietekst voor onder de post in een codeblok: „Hier geht's zum Inserat 👉 <URL>“.
+## Stap 7. Alles in het gesprek vastleggen, dan opruimen
+Marc vindt elke vacature later terug in de takenlijst van de Claude-app, niet in een map. Daarom:
+1. Geef de taak een herkenbare titel: „Vacature: <titel> (<kanton>)“.
+2. **Afbeelding bijvoegen:** toon/voeg `$WERK/<slug>.png` als bestand toe in het gesprek (zodat Marc hem in deze taak kan bekijken en downloaden), **vóór** het opruimen.
+3. Eindbericht (kort), met elk onderdeel in een **eigen codeblok**, klaar om te kopiëren:
+   1. de link naar de vacature op de website;
+   2. de volledige website-vacaturetekst;
+   3. de LinkedIn-posttekst;
+   4. de reactietekst voor onder de post: „Hier geht's zum Inserat 👉 <URL>“.
+   Vermeld daarbij of de LinkedIn-post klaarstaat in het open tabblad (of wat niet lukte).
+4. Pas daarna: `rm -rf "$WERK"` en controleer dat er niets van deze skill in Marcs gekoppelde map staat.
