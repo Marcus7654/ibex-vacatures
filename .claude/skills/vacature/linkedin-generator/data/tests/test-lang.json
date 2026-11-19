@@ -8,5 +8,5 @@
     { "icon": "klemmbrett", "titel": "Verantwortungsvolle Aufgabe", "text": "Als fallführende Pflegefachperson gestaltest du die Pflege deiner Bewohnerinnen und Bewohner aktiv mit." },
     { "icon": "team", "titel": "Persönliche Betreuung", "text": "Wir begleiten dich während des gesamten Einsatzes und sind jederzeit für dich da." }
   ],
-  "foto": { "datei": "assets/fotos/platzhalter.jpg", "fokus": "50% 30%" }
+  "foto": { "datei": "assets/fotos/bibliothek/pflege-kasack-stethoskop-herz.jpg", "fokus": "50% 30%" }
 }

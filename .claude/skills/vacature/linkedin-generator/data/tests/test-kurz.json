@@ -8,5 +8,5 @@
     { "icon": "herz", "titel": "Sinnvolle Arbeit", "text": "Du machst den Unterschied." },
     { "icon": "kalender", "titel": "Per sofort", "text": "Starte, wann du willst." }
   ],
-  "foto": { "datei": "assets/fotos/platzhalter.jpg", "fokus": "50% 30%" }
+  "foto": { "datei": "assets/fotos/bibliothek/pflege-kasack-stethoskop-herz.jpg", "fokus": "50% 30%" }
 }

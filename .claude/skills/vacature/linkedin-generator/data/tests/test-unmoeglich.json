@@ -8,5 +8,5 @@
     { "icon": "medaille", "titel": "Faire Entlöhnung", "text": "Auch dieser Text ist bewusst sehr ausführlich formuliert, damit die automatische Prüfung zeigt, dass zu lange Inhalte zuverlässig erkannt und gemeldet werden, anstatt dass sich Texte überlappen." },
     { "icon": "team", "titel": "Persönliche Betreuung", "text": "Und noch ein dritter, ebenfalls viel zu langer Text mit vielen zusätzlichen Wörtern, damit die Summe aller Vorteile garantiert nicht mehr in den Mittelteil des Bildes passt." }
   ],
-  "foto": { "datei": "assets/fotos/platzhalter.jpg", "fokus": "50% 30%" }
+  "foto": { "datei": "assets/fotos/bibliothek/pflege-kasack-stethoskop-herz.jpg", "fokus": "50% 30%" }
 }

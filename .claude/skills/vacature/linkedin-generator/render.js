@@ -10,9 +10,12 @@ const { chromium } = require('playwright');
 
 const ROOT = __dirname;
 const args = process.argv.slice(2);
-const scaleIdx = args.indexOf('--scale');
-const scale = scaleIdx >= 0 ? Number(args[scaleIdx + 1]) : 1;
-const dateien = args.filter((a, i) => !a.startsWith('--') && !(scaleIdx >= 0 && i === scaleIdx + 1));
+const optWert = (name) => { const i = args.indexOf(name); return i >= 0 ? args[i + 1] : undefined; };
+const scale = Number(optWert('--scale') || 1);
+// --out <map>: uitvoer naar een (tijdelijke) map buiten de skill, standaard ./output
+const OUT = path.resolve(optWert('--out') || path.join(ROOT, 'output'));
+const optIdx = new Set(['--scale', '--out'].flatMap((n) => { const i = args.indexOf(n); return i >= 0 ? [i, i + 1] : []; }));
+const dateien = args.filter((a, i) => !optIdx.has(i));
 
 if (!dateien.length) {
   console.error('Aufruf: node render.js data/<vakanz>.json [weitere ...] [--scale 2]');
@@ -40,17 +43,17 @@ if (!dateien.length) {
     const bericht = await page.evaluate((x) => window.renderPost(x), daten);
 
     const ziel = bericht.ok
-      ? path.join(ROOT, 'output', `${id}.png`)
-      : path.join(ROOT, 'output', '_fehler', `${id}.png`);
+      ? path.join(OUT, `${id}.png`)
+      : path.join(OUT, '_fehler', `${id}.png`);
     fs.mkdirSync(path.dirname(ziel), { recursive: true });
     await page.locator('#canvas').screenshot({ path: ziel });
 
     if (bericht.ok) {
-      fs.rmSync(path.join(ROOT, 'output', '_fehler', `${id}.png`), { force: true });
-      console.log(`✓ ${id}  →  ${path.relative(ROOT, ziel)}`);
+      fs.rmSync(path.join(OUT, '_fehler', `${id}.png`), { force: true });
+      console.log(`✓ ${id}  →  ${ziel}`);
     } else {
       fehlerAnzahl++;
-      console.log(`✗ ${id}  (Vorschau zur Fehlersuche: ${path.relative(ROOT, ziel)})`);
+      console.log(`✗ ${id}  (Vorschau zur Fehlersuche: ${ziel})`);
       for (const f of bericht.fehler) console.log(`    Fehler:  ${f}`);
     }
     for (const h of bericht.hinweise || []) console.log(`    Hinweis: ${h}`);

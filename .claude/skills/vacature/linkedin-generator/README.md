@@ -5,12 +5,14 @@ Maakt per vacature automatisch een LinkedIn-afbeelding (1200 × 1500 px) in de I
 ## Gebruik
 
 ```bash
-node render.js data/<vacature>.json            # één afbeelding
-node render.js data/*.json                      # alle vacatures
-node render.js data/<vacature>.json --scale 2   # extra scherp (2400 × 3000 px)
+node render.js <vacature>.json --out <map>        # één afbeelding naar <map>
+node render.js data/*.json --out /tmp/test        # alle voorbeelden
+node render.js <vacature>.json --scale 2          # extra scherp (2400 × 3000 px)
 ```
 
-Resultaat: `output/<vacature>.png`. Is er een opmaakfout, dan komt er **geen** afbeelding in `output/`. Je krijgt dan een foutmelding en een voorbeeld in `output/_fehler/`.
+Zonder `--out` komt het resultaat in `output/`. Is er een opmaakfout, dan komt er **geen** afbeelding. Je krijgt dan een foutmelding en een voorbeeld in `<map>/_fehler/`.
+
+Het lettertype Poppins zit in `assets/fonts/`, dus `npm install` is niet nodig. Alleen Playwright met Chromium moet beschikbaar zijn.
 
 ## Invoer per vacature (`data/*.json`)
 
@@ -36,16 +38,9 @@ Vaste teksten onderaan: „Jetzt bewerben!“ en „Link zum Inserat in den Komm
 - Geen tekst over de rand, het roze lint of de grijze golf, en geen overlap tussen blokken.
 - Past iets echt niet, dan stopt de generator met een melding om de tekst in te korten.
 
-## Foto's (Pexels)
+## Foto's
 
-```bash
-NODE_USE_ENV_PROXY=1 node fotos.js suche "home care nurse visit" --id <vacature>
-NODE_USE_ENV_PROXY=1 node fotos.js waehle <pexels-id> --id <vacature> --fokus "50% 30%"
-```
-
-`suche` downloadt kandidaten naar `assets/fotos/kandidaten/<vacature>/`. `waehle` zet de gekozen foto in de vacature en houdt in `assets/fotos/verwendet.json` bij welke foto's al gebruikt zijn, zodat ze niet terugkomen.
-
-Hiervoor moet `PEXELS_API_KEY` ingesteld zijn en moeten `api.pexels.com` en `images.pexels.com` bereikbaar zijn.
+Alle foto's staan in `assets/fotos/bibliothek/`. Per foto staat in `assets/fotos/bibliothek.json` waar hij wel en niet bij past.
 
 ## Testen
 
