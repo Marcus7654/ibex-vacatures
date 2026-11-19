@@ -1,14 +1,17 @@
 ---
 name: vacature
-description: Ibex Medics vacature-workflow. Gebruik dit ZODRA de gebruiker een screenshot of tekst van een vacature uit het vacaturesysteem plakt (velden zoals Kunde, Vakanz, Datum ab, Einsatzbereich, Qualifikation, Temp/Perm, Pensum), of /vacature typt. Maakt de website-vacature, plaatst die op ibexmedics.ch, maakt de LinkedIn-afbeelding en -posttekst en zet de post als concept klaar.
+description: Ibex Medics vacature-workflow. Gebruik dit ZODRA de gebruiker een screenshot of tekst van een vacature uit het vacaturesysteem plakt (velden zoals Kunde, Vakanz, Datum ab, Einsatzbereich, Qualifikation, Temp/Perm, Pensum), of /vacature typt. Maakt de website-vacature, plaatst die op ibexmedics.ch, maakt de LinkedIn-afbeelding en -posttekst en zet de post klaar in Chrome op de bedrijfspagina (Marc klikt zelf op Posten).
 ---
 
 # Vacature-workflow Ibex Medics
 
 Voer alle stappen achter elkaar uit, zonder tussendoor te vragen, behalve waar dat hieronder staat. Antwoord de gebruiker in het Nederlands. Alle teksten voor publicatie zijn Duits (Zwitserland).
 
+## Omgeving
+Deze skill draait lokaal in **Cowork** op Marcs computer, met de gekoppelde map „Ibex Vacatures“ (inhoud van de GitHub-repository `Marcus7654/ibex-vacatures`) en de Chrome-extensie **Claude in Chrome**. Marc is in zijn eigen Chrome al ingelogd bij WordPress en LinkedIn: gebruik die sessies, vraag nooit om wachtwoorden en sla geen inloggegevens op.
+
 ## Bestanden
-Alle paden zijn relatief aan de root van deze repository. Eenmalig per sessie: `cd linkedin-generator && npm install` (installeert het lettertype Poppins).
+Alle paden zijn relatief aan de gekoppelde map. Eenmalig: `cd linkedin-generator && npm install` (installeert het lettertype Poppins).
 
 - Website-template: `templates/vacature-template.md` (regels en mapping in de HTML-commentaar bovenaan)
 - Voorbeelden: `voorbeelden/vacature-*.md`, `voorbeelden/linkedin-post-*.txt`
@@ -33,7 +36,7 @@ Sla op als `voorbeelden/vacature-<slug>.md`.
 Controle: `grep -iE "try|<klantnaam>|<plaats van klant>|<contactpersoon>|ß"` levert niets op.
 
 ## Stap 3. Plaatsen op de website (zonder controle vooraf, direct publiceren)
-Login: `https://www.ibexmedics.ch/wp-admin`, inloggegevens uit de omgevingsvariabelen `IBEX_WP_USER` en `IBEX_WP_PASSWORD` (nooit in chat of bestanden zetten). Gebruik Playwright (Chromium).
+Gebruik **Claude in Chrome** en open `https://www.ibexmedics.ch/wp-admin` (Marc is daar al ingelogd). Is hij niet ingelogd → vraag Marc om in te loggen in dat tabblad en ga daarna verder; vul nooit zelf een wachtwoord in.
 1. Menu links **Job Openings** → **Add New Job**.
 2. **Job Title**: de titel. Daaronder de vacaturetekst (zonder de titelregel en zonder de kenmerkregels Jobkategorie/Anstellungsart/Arbeitsplatz/Pensum, die gaan via de specificaties).
 3. Helemaal naar beneden: meta box **Job specifications**:
@@ -48,18 +51,20 @@ Login: `https://www.ibexmedics.ch/wp-admin`, inloggegevens uit de omgevingsvaria
 1. Kies een foto uit `bibliothek.json`. **Interpreteer de context**: de foto moet echt bij de functie passen (`passt_zu`/`passt_nicht_zu`), bijv. Röntgen-/CT-foto's alleen voor radiologie, een arts in een witte jas niet voor de verpleging. Bekijk de foto zelf (Read). Kies bij voorkeur een foto die nog niet of al lang niet meer in `verwendet.json` staat. Past er geen enkele foto → vraag de gebruiker om een passende foto, gebruik geen foto die niet past.
 2. Maak `linkedin-generator/data/<slug>.json`: titel (functie), zeile1 „Setting | Kanton X“, zeile2 „Pensum X–Y % · Start per sofort“, 3 korte voordelen met passend icon, foto + fokus.
 3. `cd linkedin-generator && node render.js data/<slug>.json`. Bij ✗ of hints: teksten inkorten en opnieuw renderen. Bekijk de PNG zelf.
+   Werkt `render.js` niet (bijv. Playwright of Chromium ontbreekt): eenmalig `npm install playwright && npx playwright install chromium` proberen. Lukt ook dat niet → meld het Marc en ga verder met stap 5; de afbeelding kan dan in een cloudsessie met dezelfde repository gemaakt worden.
 4. Voeg de foto met vacature en datum toe aan `verwendet.json`.
 
 ## Stap 5. LinkedIn-posttekst
 Volg `linkedin-post-template.md`: max ~900 tekens, gangbare emoji's, kenmerken/USP's **onder elkaar**, **geen streepjes**, „Ibex Medics“ (niet IBEX), geen link/e-mail, afsluiting „👉 Link zum Inserat in den Kommentaren · Lebenslauf genügt“, precies ≤ 5 hashtags met `#IbexMedics`. Wissel de opening af: kijk naar de laatst gemaakte post in `voorbeelden/` en kies de andere variant (hoofdletters ↔ vraag). Sla op als `voorbeelden/linkedin-post-<slug>.txt`.
 
-## Stap 6. LinkedIn-concept
-- Altijd op de **bedrijfspagina van Ibex Medics**, nooit op het persoonlijke account van Marc.
-- Plaats als **concept** (niet publiceren) met afbeelding en posttekst. De vacature-URL van stap 3 is bedoeld voor de eerste reactie, die plaatst Marc na publicatie (of ik, als hij dat vraagt).
-- Lukt opslaan als concept niet → niet publiceren, maar afbeelding, tekst en URL opleveren en melden.
+## Stap 6. LinkedIn-post klaarzetten in Chrome (niet zelf plaatsen)
+1. Open met **Claude in Chrome** de beheerpagina van de **bedrijfspagina Ibex Medics** (LinkedIn → Ich/Me → Seiten verwalten/Manage pages → Ibex Medics AG). **Nooit** posten vanaf het persoonlijke profiel van Marc ter Steeg: controleer vóór het schrijven dat bovenaan in het postvenster „Ibex Medics“ als afzender staat.
+2. Klik „Beitrag erstellen / Start a post“, plak de posttekst uit stap 5 exact (regelafbrekingen behouden) en voeg de afbeelding uit `linkedin-generator/output/<slug>.png` toe.
+3. **Stop vóór „Posten“** en laat het tabblad open. Marc controleert en klikt zelf op Posten.
+4. Na het plaatsen hoort de vacature-URL in de eerste reactie; lever die reactietekst aan (stap 7).
 
 ## Stap 7. Terugmelden (kort)
 - Link naar de vacature op de website
-- Status van het LinkedIn-concept
+- Dat de LinkedIn-post klaarstaat in het open tabblad (of wat niet lukte)
 - Afbeelding (SendUserFile) en posttekst (in een codeblok, klaar om te kopiëren)
 - De reactietekst met de link: „Hier geht's zum Inserat 👉 <URL>“
